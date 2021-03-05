@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <ul class="myList1">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <ul class="myList2">
+        <li>Water</li>
+        <li>Milk</li>
+    </ul>
+
+    <p>Click the button to copy an item from one list to another.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p>Try changing the <em>deep</em> parameter to false, and only an empty LI element will be cloned.</p>
+
+    <script>
+        function myFunction() {
+            var itm = document.getElementsByClassName("myList1")[0].childNodes[0]; // Grab furst child
+
+            var cln = itm.cloneNode(true); // copy it
+
+            // add it onto the end of the list
+            // document.getElementsByClassName("myList1")[0].appendChild(cln);
+
+            // Add it onto the front of the list
+            document.getElementsByClassName("myList1")[0].insertBefore(cln, itm);
+
+
+        }
+    </script>
+
+</body>
+
+</html>
