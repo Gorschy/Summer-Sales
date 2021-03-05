@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Retail Hut | Homepage</title>
+
+    <!-- Favicon Settings-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ed8958">
+    <meta name="msapplication-TileColor" content="#fbf3ef">
+    <meta name="theme-color" content="#fbf3ef">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- UsingBootstrap v5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3727895d82.js"></script>
+
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #FBF3EF;">
+        <!-- Bootstrap Break Down -->
+        <!--"navbar sticky-top navbar-expand-lg navbar-dark bg-dark"-->
+        <!-- navbar: refers to the navigration system used to travel between pages of a site -->
+        <!-- sticky-top: refers to the placement or in css terms position of the navbar. In our case the navbar never leaves the screen and follows the user as the scroll down the site -->
+        <!-- navbar-expand-lg: refers to the navbar being expansive -->
+        <!-- navbar-dark: refers to the text font. navbar-light is used for light mode-->
+        <!-- style="background-color: #FBF3EF;": refers to the background colour-->
+
+        <div class="container-fluid">
+            <!-- Hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Logo/Brand -->
+            <img class="brand" src="logo.png" alt="logo" draggable="false">
+
+            <!-- Search Bar -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                <!-- Search Button -->
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- Homepage -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <!-- Link 1# -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sales</a>
+                    </li>
+
+                    <!-- Link 2# -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+
+                    <!-- Dropdown bar-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop By Lifestyle
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">The Adventurer</a></li>
+                            <li><a class="dropdown-item" href="#">The Corprate</a></li>
+                            <li><a class="dropdown-item" href="#">The Creative</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+            <!-- User Icon-->
+            <i class="fas fa-user-circle"></i>
+
+            <!-- Shopping Cart Icon-->
+            <i class="fas fa-shopping-cart"></i>
+
+
+
+        </div>
+    </nav>
+
+
+    <!-- Homepage Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <br />
+
+    <section class="newpage">
+        <div class="container">
+            <h3>Whats New!</h3>
+            <br />
+        </div>
+        <!-- Product Carsouel -->
+        <div class="slideshow-container">
+            <!--Slide 1-->
+            <div class="product-slide fade-away">
+                <ol class="product-list">
+                    <li>
+                        <div class="col"><img src=img/stock1.jpg /></div>
+                        <div class="col">Product 1</div>
+                        <div class="col">Rating 1</div>
+                        <div class="col">Price 1</div>
+                    </li>
+
+                    <li>
+                        <div class="col"><img src=img/stock2.jpg /></div>
+                        <div class="col">Product 2</div>
+                        <div class="col">Rating 2</div>
+                        <div class="col">Price 2</div>
+                    </li>
+
+                    <li>
+                        <div class="col"><img src=img/stock3.jpg /></div>
+                        <div class="col">Product 3</div>
+                        <div class="col">Rating 3</div>
+                        <div class="col">Price 3</div>
+                    </li>
+
+                    <li>
+                        <div class="col"><img src=img/stock4.jpg /></div>
+                        <div class="col">Product 4</div>
+                        <div class="col">Rating 4</div>
+                        <div class="col">Price 4</div>
+                    </li>
+
+                    <li>
+                        <div class="col"><img src=img/stock5.jpg /></div>
+                        <div class="col ">Product 5</div>
+                        <div class="col ">Rating 5</div>
+                        <div class="col ">Price 5</div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="product-slide fade-away">
+                <ol class="product-list">
+                    <li>
+                        <div class="col"><img src=img/stock1.jpg /></div>
+                        <div class="col">Product 1</div>
+                        <div class="col">Rating 1</div>
+                        <div class="col">Price 1</div>
+                    </li>
+
+                    <li>
+                        <div class="col"><img src=img/stock2.jpg /></div>
+                        <div class="col">Product 2</div>
+                        <div class="col">Rating 2</div>
+                        <div class="col">Price 2</div>
+                    </li>
+
+                    <li>
+                        <div class="col"><img src=img/stock3.jpg /></div>
+                        <div class="col">Product 3</div>
+                        <div class="col">Rating 3</div>
+                        <div class="col">Price 3</div>
+                    </li>
+
+                    <li>
+                        <div class="col"><img src=img/stock4.jpg /></div>
+                        <div class="col">Product 4</div>
+                        <div class="col">Rating 4</div>
+                        <div class="col">Price 4</div>
+                    </li>
+
+                    <li>
+                        <div class="col"><img src=img/stock5.jpg /></div>
+                        <div class="col ">Product 5</div>
+                        <div class="col ">Rating 5</div>
+                        <div class="col ">Price 5</div>
+                    </li>
+                </ol>
+            </div>
+
+
+
+            <button class="prev" onclick="plusSlides(-1)" value="p">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)" value="n">&#10095;</button>
+
+        </div>
+        <!-- JScript Used for the Product Carsouel-->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var slides = document.getElementsByClassName("product-slide");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+            }
+            // ------------------------------------------
+
+
+            // When screen get small so does the product carsouel
+
+            var x = window.matchMedia("(max-width: 900px)");
+            carouselFixer(x); // Call listener function at run time
+            x.addListener(carouselFixer); // Attach listener function on state changes
+
+            function carouselFixer(x) {
+
+                if (x.matches) { // If media query matches
+
+                    // For every ordered list classed as "product-list"
+                    for (var i = 0; i < document.getElementsByClassName("product-list").length; i++) {
+
+                        //Make a copy of lastchild
+                        var node = document.getElementsByClassName("product-list")[i].lastChild;
+                        var cln = node.cloneNode(true);
+
+                        //delete last child
+                        document.getElementsByClassName("product-list")[i].lastChild.remove();
+
+                        // Checks if their is a slide that exists after the one we're on now 
+                        if (i + 1 < document.getElementsByClassName("product-list").length) {
+                            var list2 = document.getElementsByClassName("product-list")[i + 1];
+                            list2.insertBefore(cln, list2.childNodes[0]);
+                        } else {
+                            var newItem = document.createElement("LI");
+                            var textnode = document.createTextNode("Water");
+                            //Create new ol and li
+
+                            //insert li
+                        }
+
+
+
+
+
+                    }
+
+
+
+
+
+                    // Check all the Slides for room to move this product
+                    for (var k = 0; k < document.getElementsByClassName("product-list").length; k++) {
+                        // if their is room i.e. less then 4 good.
+                        if (4 > document.getElementsByClassName("product-list")[k].getElementsByTagName("li").length) {
+
+                            //Grab product 5
+
+
+
+                            break; // If found room exit for loop
+                        }
+
+
+                        // Couldn't find any room thus have to make a new slide
+                        if (k == (document.getElementsByClassName("product-list").length - 1)) {
+
+                        }
+                    }
+
+
+                } else {
+                    for (var i = 0; i < document.getElementsByClassName("product5").length; i++) {
+                        // Add 5th column
+                        document.getElementsByClassName("product5")[i].style.visibility = "visible";
+                    }
+                }
+            }
+        </script>
+    </section>
+
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

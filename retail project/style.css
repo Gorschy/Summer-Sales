@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+}
+
+.product-list{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+
+}
+
+.product-list li{
+    display: inline-block;
+    float:none;
+    margin-right: 2px;
+}
+
+
+img.brand{
+    margin-top: 0px;
+    max-height: 120px;
+    width: 120px;
+    height: auto;
+    margin-right: 1rem;   
+}
+
+/* Search bar*/
+input.form-control{ 
+    width: 500px;
+    height: 50px;
+}
+
+@media (max-width: 1399.98px) {
+    img.brand {
+        margin-right: 1rem;   
+        display: block;
+        width: 15%;
+        height: auto;
+      }
+
+      /* Search bar*/
+      input.form-control{
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    img.brand {
+        margin-right: 0.25rem;   
+        display: block;
+        width: 16%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      /* Search bar*/
+      input.form-control{
+          width: 450px;
+          height: 45px;
+
+      }
+}
+
+@media (max-width: 785px) {
+    img.brand {
+        width: 16%;
+        height: auto;
+      }
+
+    /* Search bar*/
+      input.form-control{
+          width: 350px;
+          height: 40px;
+      }
+}
+
+@media (max-width: 650px) {
+    img.brand {
+        width: 20%;
+        height: auto;
+      }
+      
+    /* Search bar*/
+    input.form-control{
+        width: 250px;
+    }
+}
+
+@media (max-width: 550px) {    
+    /* Search bar*/
+    input.form-control{
+        width: 200px;
+        height: 38px;
+    }
+}
+
+.product-slide {
+    display: none;
+    max-width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    
+  }
+
+
+
+  .product-slide  img {
+    vertical-align: middle;
+    width: 140px;
+
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+  }
+
+  /* Next & previous buttons */
+  /*Product Controls*/
+  .prev,
+  .next {
+    border: 2px solid #8D9096;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 11px 20px;
+    background-color: #e7e9ec;
+    color: rgb(93, 92, 92);
+    font-size: 23px;
+    border-radius: 3px;
+    user-select: none;
+    text-decoration: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 10px;
+  }
+  .prev{
+      left: 10px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover,
+  .prev:active,
+  .next:active {
+    background-color: #cccdcf;
+    color: rgb(93, 92, 92);
+
+
+  }
+
+  .prev:focus,
+  .next:focus {
+    outline: 2.5px solid rgba(135, 189, 251, 0.785);
+    box-shadow: 0 0 10px rgba(135, 189, 251, 0.785);
+  }
+
+
+
+  /* Fading animation */
+  .fade-away {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.9s;
+    animation-name: fade;
+    animation-duration: 0.9s;
+  }
+
+  @-webkit-keyframes fade{
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+
+    .prev,
+    .next {
+      font-size: 11px
+    }
+  }
+
+  .product5{
+      display: block;
+  }
+/*
+img.brand {
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 200px;
+	font-size: 1.25rem;
+	text-decoration: none;
+    white-space: nowrap;
+    width: 80px;
+    height: 80px; 
+
+}
+
+  <!-- Categories -->
+    <div class="container">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">Row column</div>
+            </div>
+        </div>
+    </div>
+
+
+     <script>
+            function myFunction(obj) {
+                if (obj == "p") {
+                    document.getElementsByClassName("prev")[0].style.outline = "0.5px solid rgba(135, 189, 251, 0.785)";
+                    document.getElementsByClassName("prev")[0].style.boxShadow = "0 0 120px rgba(135, 189, 251, 1)";
+                    document.getElementsByClassName("next")[0].style.outline = "none";
+                    document.getElementsByClassName("next")[0].style.boxShadow = "none;"
+
+
+                    plusSlides(-1);
+                } else {
+                    document.getElementsByClassName("next")[0].style.outline = "2.5px solid rgba(135, 189, 251, 0.785)";
+                    document.getElementsByClassName("next")[0].style.boxShadow = "0 0 120px rgba(135, 189, 251, 1)";
+
+                    document.getElementsByClassName("prev")[0].style.outline = "none";
+                    document.getElementsByClassName("prev")[0].style.boxShadow = "none;"
+
+
+
+                    plusSlides(1);
+                }
+
+            }
+        </script>
+
+         <!-- Disabled Link 1# -->
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+*/
+
+
